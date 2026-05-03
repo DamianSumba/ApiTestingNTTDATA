@@ -1,0 +1,22 @@
+CONCLUSIONES:
+
+1. La API de PetStore permite operaciones CRUD básicas correctamente.
+2. Se identificó que:
+   - El endpoint POST /pet crea correctamente registros.
+   - GET /pet/{id} responde con datos consistentes.
+   - PUT /pet actualiza correctamente los campos.
+   - GET /pet/findByStatus devuelve listas de mascotas según el estado.
+
+3. Hallazgos:
+   - No existe validación estricta de datos (se pueden enviar datos incompletos).
+   - La API es pública y puede tener datos inconsistentes por uso de terceros.
+
+4. Karate facilita:
+   - Validaciones simples con match
+   - Manejo de variables dinámicas
+   - Ejecución rápida sin mucho código
+
+5. Se recomienda:
+   - Agregar validaciones negativas (errores)
+   - Implementar pruebas de carga con k6
+   - Integrar en CI/CD (Jenkins)
