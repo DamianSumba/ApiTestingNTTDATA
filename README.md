@@ -12,11 +12,18 @@ INSTALACIÓN:
 2. Ingresar al proyecto:
    cd petstore-karate
 
-EJECUCIÓN:
-3. Ejecutar pruebas:
-   mvn test
+3. Pruebas
+ - Escenarios con datos en el Feature
+ - Escenarios con datos en archivo esterno (src/test/java/petstore/data)
+ - Escenarios negativos en Feature separado
 
-RESULTADOS:
+EJECUCIÓN:
+4. Ejecutar pruebas:
+   - mvn test (Global) 
+   - Ejecutar Runners Individuales (src/test/java/petstore/runners)
+   
+
+5. RESULTADOS:
 - Los reportes se generan en:
   target/karate-reports/karate-summary.html
 
